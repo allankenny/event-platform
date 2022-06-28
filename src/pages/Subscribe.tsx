@@ -3,6 +3,7 @@ import { FormEvent, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Logo } from "../components/Logo";
 import { useCreateSubscribeMutation } from "../graphql/generated";
+import imageCode from "./../assets/mockup_background.png"
 
 // Chamar query do graphql sem o graphql generation
 const CREATE_SUBSCRIBE_MUTATION = gql`
@@ -69,7 +70,7 @@ export function Subscriber(){
           </form>
         </div>
       </div>
-      <img src="/src/assets/mockup_background.png" className="mt-10" alt="" />
+      <img src={imageCode} className="mt-10" alt="" />
     </div>
   )
 }
