@@ -21,7 +21,7 @@ export function Lesson(props: LessonProps){
       <span className="text-gray-300">
       {availableDateFormatted}
       </span>
-      <div className={`rounded border border-gray-500 p-4 mt-2 group-hover:border-green-500 ${isActiveLesson ? 'bg-green-500' : ''}`}>
+      <div className={`rounded border border-gray-500 p-4 mt-2 group-hover:border-purple-600 ${isActiveLesson ? 'bg-purple-600' : ''}`}>
         <header className="flex items-center justify-between">
           {isLessonAvailable ? (
             <span className={`text-small font-medium flex items-center gap-2 ${isActiveLesson ? 'text-white' : 'text-blue-500'}`}>
@@ -29,13 +29,13 @@ export function Lesson(props: LessonProps){
               Conteúdo liberado
             </span>
           ) : (
-            <span className="text-small text-orange-500 font-medium flex items-center gap-2">
+            <span className="text-small text-rose-600 font-medium flex items-center gap-2">
               <Lock size={18}/>
               Em breve
             </span>
           )}
 
-          <span className={`text-xs rounded text-white border py-[0.125rem] px-2 font-bold ${isActiveLesson ? 'border-white' : 'border-green-300'}`}>
+          <span className={`text-xs rounded text-white border py-[0.125rem] px-2 font-bold ${isActiveLesson ? 'border-white' : 'border-purple-600'}`}>
             {props.type === 'live' ? 'AO VIVO' : 'AULA PRÁTICA'}
             </span>
         </header>

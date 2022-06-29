@@ -6,13 +6,13 @@ import { useCreateSubscribeMutation } from "../graphql/generated";
 import imageCode from "./../assets/mockup_background.png"
 
 // Chamar query do graphql sem o graphql generation
-const CREATE_SUBSCRIBE_MUTATION = gql`
-  mutation CreateSubscribe ($name: String!, $email: String!) {
-    createSubscriber(data: {name: $name, email: $email}) {
-      id
-    }
-  }
-`
+// const CREATE_SUBSCRIBE_MUTATION = gql`
+//   mutation CreateSubscribe ($name: String!, $email: String!) {
+//     createSubscriber(data: {name: $name, email: $email}) {
+//       id
+//     }
+//   }
+// `
 
 export function Subscriber(){
   const navigate = useNavigate();
@@ -32,15 +32,15 @@ export function Subscriber(){
     navigate('/event/lesson/abertura-evento');
   }
   return(
-    <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
+    <div className="min-h-screen bg-purple bg-cover bg-no-repeat flex flex-col items-center">
       <div className="w-full max-w-[1100px] flex items-center justify-between mt-20 mx-auto">
         <div className="max-w-[640px]">
           <Logo />
-          <h1 className="mt-8 text-[2.5rem] leading-tight">
-            Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
+          <h1 className="mt-8 text-[2.4rem] leading-tight">
+            Uma <strong className="text-blue-500 text-[2.8rem]">plataforma completa</strong> para treinamentos, eventos e cursos
           </h1>
           <p className="mt-4 text-gray-200 leading-relaxad">
-            Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
+            Cadastre seus vídeos, defina lançamentos e tipo das aulas e entregue ao seus cliente uma execelente experiência de aula.
           </p>
         </div>
         <div className="p-8 bg-gray-700 border border-gray-500 rounded">
@@ -62,7 +62,7 @@ export function Subscriber(){
             />
             <button
               disabled={loading}
-              className="mt-4 bg-green-500 rounded uppercase py-4 text-sm font-bold hover:bg-green-700 transition-colors disabled:opacity-50"
+              className="mt-4 bg-purple-600 rounded uppercase py-4 text-sm font-bold hover:bg-purple-700 transition-colors disabled:opacity-50"
               type="submit" 
             >
               garantir minha vaga

@@ -95,11 +95,11 @@ export function Video( props : VideoProps){
             )}
           </div>
           <div className="flex flex-col gap-4">
-            <a href="" className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors">
+            <a href="" className="p-4 text-sm bg-purple-600 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-purple-700 transition-colors">
               <DiscordLogo size={20}/>
               Comunidade do Discord
             </a>
-            <a href="" className="p-4 text-sm border border-blue-500 text-blue-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-blue-500 hover:text-gray-900 transition-colors">
+            <a href="" className="p-4 text-sm border border-purple-600 text-purple-600 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-purple-600 hover:text-white transition-colors">
               <Lightning size={20}/>
               Acesse o desafio
             </a>
@@ -107,7 +107,7 @@ export function Video( props : VideoProps){
         </div>
         <div className="gap-8 mt-20 grid grid-cols-2">
           <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-purple-600 h-full p-6 flex items-center">
               <FileArrowDown  size={40}/>
             </div>
             <div className="py-6 leading-relaxed">
@@ -123,7 +123,7 @@ export function Video( props : VideoProps){
             </div>
           </a>
           <a href="#" className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors">
-            <div className="bg-green-700 h-full p-6 flex items-center">
+            <div className="bg-purple-600 h-full p-6 flex items-center">
               <Image  size={40}/>
             </div>
             <div className="py-6 leading-relaxed">
